@@ -19,7 +19,7 @@
                     <div>
                         <label class="flex justify-center items-center gap-2">
                             <img src="./assets/checkbox.png" alt="">
-                            <span class="text-2xl font-bold">23</span>
+                            <span id="completTask" class="text-2xl font-bold">23</span>
                         </label>
                     </div>
                     <div>
@@ -40,7 +40,7 @@
                         <input type="checkbox" class="w-5 h-5 ">
                         <div>
                           <p class=" text-base font-medium">Task Assigned </p>
-                          <h1 class="text-xl font-bold">05</h1>
+                          <h1 id="completAssign" class="text-xl font-bold">05</h1>
                         </div>
                       </div>
                       <div class="col-span-3 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center gap-10 rounded-md">
@@ -80,7 +80,7 @@
                             <p class="text-lg font-semibold">21 March 2025</p>
                           </div>
                           <div>
-                            <button class="btn bg-[#3752FD] rounded-md text-white">Completed</button>
+                            <button id="Complete-btn" class="btn bg-[#3752FD] rounded-md text-white">Completed</button>
                           </div>
                         </div>
                       </div>
@@ -104,7 +104,7 @@
                             <p class="text-lg font-semibold">21 March 2025</p>
                           </div>
                           <div>
-                            <button class="btn bg-[#3752FD] rounded-md text-white">Completed</button>
+                            <button id="Complete-btn" class="btn bg-[#3752FD] rounded-md text-white">Completed</button>
                           </div>
                         </div>
                       </div>
@@ -128,7 +128,7 @@
                             <p class="text-lg font-semibold">21 March 2025</p>
                           </div>
                           <div>
-                            <button class="btn bg-[#3752FD] rounded-md text-white">Completed</button>
+                            <button id="Complete-btn" class="btn bg-[#3752FD] rounded-md text-white">Completed</button>
                           </div>
                         </div>
                       </div>
@@ -152,7 +152,7 @@
                             <p class="text-lg font-semibold">21 March 2025</p>
                           </div>
                           <div>
-                            <button class="btn bg-[#3752FD] rounded-md text-white">Completed</button>
+                            <button id="Complete-btn" class="btn bg-[#3752FD] rounded-md text-white">Completed</button>
                           </div>
                         </div>
                       </div>
@@ -176,7 +176,7 @@
                             <p class="text-lg font-semibold">21 March 2025</p>
                           </div>
                           <div>
-                            <button class="btn bg-[#3752FD] rounded-md text-white">Completed</button>
+                            <button id="Complete-btn" class="btn bg-[#3752FD] rounded-md text-white">Completed</button>
                           </div>
                         </div>
                       </div>
@@ -200,7 +200,7 @@
                             <p class="text-lg font-semibold">21 March 2025</p>
                           </div>
                           <div>
-                            <button class="btn bg-[#3752FD] rounded-md text-white">Completed</button>
+                            <button id="Complete-btn" class="btn bg-[#3752FD] rounded-md text-white">Completed</button>
                           </div>
                         </div>
                       </div>
@@ -216,23 +216,28 @@
                       <h2 class="text-lg font-semibold">Activity Log</h2>
                     </div>
                    <div>
-                    <button class="btn bg-[#3752FD] rounded-md text-white">Clear History</button>
+                    <button class=" p-2 px-3 text-base font-semibold bg-[#3752FD] rounded-md text-white">Clear History</button>
                    </div>
                   </div>
                   <hr class="border-dashed  border-gray-300">
+                  <div id="oneByone" class="p-2">
+                    
+
+                  </div>
                   <div>
-                    <h2 class="text-center text-2xl mt-3 font-semibold">Clear All History</h2>
+                    <h2 id="historyClear" class="text-center text-2xl mt-3 font-semibold">Clear All History</h2>
                   </div>
                 </div>
                
 
               
-                 <div>
-                    
-
-                </div>
+                
             </div>
         </section>
     </main>
+
+
+
+    <script src="./script/clickhover.js"></script>
 </body>
 </html>
