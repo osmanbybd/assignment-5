@@ -31,8 +31,8 @@ for(let i = 0; i<completeBtn.length; i++ ){
 
    let newHistory = document.createElement('p');
 
-   let time = curentTime();
-   newHistory.innerText ="You have succesfully complete button Fix Mobile Button Issue";
+   let time = currentTime();
+   newHistory.innerText =`You have succesfully complete button Fix Mobile Button Issue ${time}`;
 
    let allClearHistory= document.getElementById('historyClear');
    if(allClearHistory){
@@ -47,19 +47,35 @@ for(let i = 0; i<completeBtn.length; i++ ){
   })
 }
 
-function curentTime(){
+function currentTime(){
    let now = new Date();
    let hours = now.getHours();
    let minuts = now.getMinutes();
    let seconds = now.getSeconds();
-   let remaining = hours >= 24 ? "PM" : "AM";
-   hours = hours % 24;
+   let period = hours >= 12 ? "PM" : "AM";
+   hours = hours % 12;
     
 
-   return `${hours}:${minuts}:${seconds}:${remaining}`;
-
-
+   return `${hours}:${minuts}:${seconds}:${period}`;
 
 }
 
 
+const allOver =document.getElementById('oneByone');
+const allClear = document.getElementById('historyClear');
+document.getElementById('clearHistory').addEventListener('click', function(){
+  allClear.style.display = 'block';
+    allOver.style.display = "none";
+})
+
+
+
+
+const today = new Date();
+const day = today.toLocaleString("en-us", {weekday: "short"});
+const date = today.toLocaleDateString("en-us", {month: "short", day:"2-digit", year:"numeric"});
+
+window.onload = function() {
+document.getElementById("date-month").innerText = date;
+document.getElementById("week-day").innerText = day;
+};

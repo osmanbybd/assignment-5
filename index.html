@@ -22,7 +22,7 @@
                             <span id="completTask" class="text-2xl font-bold">23</span>
                         </label>
                     </div>
-                    <div>
+                    <div id="color-theme">
                         <img class="w-9" src="./assets/theme-btn.png" alt="">
                     </div>
                 </div>
@@ -40,10 +40,10 @@
                         <input type="checkbox" class="w-5 h-5 ">
                         <div>
                           <p class=" text-base font-medium">Task Assigned </p>
-                          <h1 id="completAssign" class="text-xl font-bold">05</h1>
+                          <h1 id="completAssign" class="text-xl font-bold">06</h1>
                         </div>
                       </div>
-                      <div class="col-span-3 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center gap-10 rounded-md">
+                      <div  class="col-span-3 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] flex justify-center items-center gap-10 rounded-md">
                         <img src="./assets/board.png" alt="">
                         <h1 class="text-2xl text-white font-semibold">Discover Something <br> New Today!</h1>
                       </div>
@@ -52,10 +52,10 @@
                           <img  src="./assets/calender.png" alt="">
                         </div>
                         <div>
-                          <p class="text-lg font-semibold">
+                          <p id="week-day" class="text-lg font-semibold">
                             
                           </p>
-                          <p class="text-xl font-semibold"></p>
+                          <p id="date-month" class="text-xl font-semibold"></p>
                         </div>
                       </div>
                       
@@ -216,11 +216,11 @@
                       <h2 class="text-lg font-semibold">Activity Log</h2>
                     </div>
                    <div>
-                    <button class=" p-2 px-3 text-base font-semibold bg-[#3752FD] rounded-md text-white">Clear History</button>
+                    <button id="clearHistory" class=" p-2 px-3 text-base font-semibold bg-[#3752FD] rounded-md text-white">Clear History</button>
                    </div>
                   </div>
                   <hr class="border-dashed  border-gray-300">
-                  <div id="oneByone" class="p-2">
+                  <div id="oneByone" class="p-2 ">
                     
 
                   </div>
@@ -239,5 +239,6 @@
 
 
     <script src="./script/clickhover.js"></script>
+    <script src="./script/themecolor.js"></script>
 </body>
 </html>

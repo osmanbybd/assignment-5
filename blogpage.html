@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Blog page</title>
+</head>
+<body class="bg-[#F4F7FF] min-h-screen">
+    <header>
+        <nav class="pt-6">
+            <div class="navbar container mx-auto rounded-md bg-white p-5  justify-between shadow-sm">
+                <div class="flex">
+                  <img src="./assets/logo.png" alt="">
+                  <h1 class="text-4xl">Dev<span class="font-bold">Board</span></h1>
+                </div>
+                <div class="">
+                    
+                    <button id="Complete-btn" class="btn bg-[#3752FD] rounded-md py-6 px-5 text-lg font-semibold text-white">Back to Desk</button>
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <main class="container mx-auto">
+        <h1 class=" text-center my-8 text-4xl font-extrabold">Blogs</h1>
+
+        <div class="space-y-6">
+            <div class="bg-white p-4 rounded-md">
+                <h1 class="text-lg font-semibold py-3">Question-1: What are the different ways to select an element in the DOM?  </h1>
+                <hr class="border-dashed border-gray-300">
+                <p class="py-3 text-base text-gray-500">Selecting DOM  elements is a fundamental aspect of web development with JavaScript. It allows developers to interact with and manipulate elements on a webpage dynamically. Proper selection of elements is crucial for tasks such as updating content, adding event listeners, or modifying styles.</p>
+            </div>
+            <div class="bg-white p-4 rounded-md">
+                <h1 class="text-lg font-semibold py-3">Question-2: What is the difference between innerHTML, innerText, and textContent ?  </h1>
+                <hr class="border-dashed border-gray-300">
+                <p class="py-3 text-base text-gray-500">innerHTML retrieves the complete HTML content within an element, including tags, while innerText only returns the visible text content of an element, ignoring HTML tags and styling, and textContent returns all text content within an element, including hidden text like script tags, while also preserving whitespace and line breaks, unlike innerText which may adjust spacing based on rendering</p>
+            </div>
+            <div class="bg-white p-4 rounded-md">
+                <h1 class="text-lg font-semibold py-3">Question-3: What is event delegation in the DOM?  </h1>
+                <hr class="border-dashed border-gray-300">
+                <p class="py-3 text-base text-gray-500">event delegation is a JavaScript technique where you attach a single event listener to a parent element instead of adding listeners to multiple child elements,</p>
+            </div>
+            <div class="bg-white p-4 rounded-md">
+                <h1 class="text-lg font-semibold py-3">Question-4: What is event bubbling in the DOM? </h1>
+                <hr class="border-dashed border-gray-300">
+                <p class="py-3 text-base text-gray-500">Event bubbling in JavaScript is a mechanism where an event triggered on a child element propagates upward through its ancestors in the DOM</p>
+            </div>
+            <div class="bg-white p-4 rounded-md">
+                <h1 class="text-lg font-semibold py-3">Question-5: How do you create, add, and remove elements using JavaScript? </h1>
+                <hr class="border-dashed border-gray-300">
+                <p class="py-3 text-base text-gray-500">I can create new element in JS using document.createElement() and then add it to the DOM with appendChild() or insertBefore(). To remove an element, use removeChild() or parentNode.removeChild() on its parent element</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
