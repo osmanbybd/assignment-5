@@ -1,3 +1,3 @@
-document.getElementById("back-sapne").addEventListener("click", function(){
+document.getElementById("back-sapce").addEventListener("click", function(){
     window.location.href = "index.html";
 });
